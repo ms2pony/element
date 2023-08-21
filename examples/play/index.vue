@@ -1,13 +1,15 @@
 <template>
   <div style="margin: 20px">
     <div class="block">
-      <span class="demonstration">多选可搜索</span>
-      <el-cascader
-        placeholder="试试搜索：指南"
-        :options="options"
-        :props="{ multiple: true }"
-        filterable
-      ></el-cascader>
+      <!-- <span class="demonstration">多选可搜索</span> -->
+      <div class="container">
+        <el-cascader
+          placeholder="试试搜索：指南"
+          :options="options"
+          :props="{ multiple: true }"
+          filterable
+        ></el-cascader>
+      </div>
     </div>
   </div>
 </template>
@@ -288,3 +290,14 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+// .el-cascader{
+//   margin: 0 auto;
+// }
+.container{
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+</style>
