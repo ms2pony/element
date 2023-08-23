@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"],
+        "element-ui/*": ["./*"]
+      },
+      "checkJs":false
+    },
+    "exclude": ["node_modules", "dist","plop-templates"],
+    "include": ["src/**/*"]
+  }
+  
+  
